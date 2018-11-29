@@ -1,0 +1,5 @@
+node_modules/
+public/
+test/
+server.js
+webpack.config.*

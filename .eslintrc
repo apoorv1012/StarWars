@@ -1,0 +1,66 @@
+{
+    "root": true,
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "sourceType": "module"
+    },
+    "plugins": [
+        "lodash",
+        "react",
+        "import",
+        "xo",
+        "destructuring",
+        "switch-case",
+        "promise"
+    ],
+    "settings": {
+        "react": {
+            "version": "15.6.1"
+        },
+        "import/ignore": [
+            "templates",
+            "libs",
+            "\\.json",
+            "node_modules"
+        ]
+    },
+    "globals": {
+        // added by the build process
+        "BUILD_IS_DEBUG": false,
+        "BUILD_IS_PHONE": false,
+        "BUILD_IS_TABLET": false,
+        "BUILD_IS_DESKTOP": false,
+        "BUILD_APP_NAME": false,
+        // use for module splitting
+        "require": false,
+        // define our own globals since the built-in list contains many false negatives like "find" that are non-standard
+        "window": false,
+        "document": false,
+        "location": false,
+        "escape": false,
+        "unescape": false,
+        "setTimeout": false,
+        "clearTimeout": false,
+        "setInterval": false,
+        "clearInterval": false,
+        "console": false,
+        "sessionStorage": false,
+        "XMLHttpRequest": false,
+        "atob": false,
+        "Blob": false,
+        "navigator": false,
+        "MessageChannel": false,
+        "Map": false,
+        "Uint8Array": false,
+        "Promise": false,
+        "HTMLElement": false,
+        "MouseEvent": false,
+        "performance": false,
+        "fetch": false
+    },
+    "rules": { 
+    }
+}
