@@ -25,7 +25,7 @@ exports.plugins = [
     new CopyWebpackPlugin([{ from: path.resolve('src/assets/'), to: 'assets' }]),
     extractCSSPlugin,
     commonChunk,
-    new OpenBrowserPlugin({ browser: 'google chrome' }),
+    new OpenBrowserPlugin(),
     new ManifestPlugin(),
     new webpack.optimize.CommonsChunkPlugin({ name: 'meta', chunks: ['vendor'], filename: 'meta.[hash].js' }),
     htmWebpackPlugin,
